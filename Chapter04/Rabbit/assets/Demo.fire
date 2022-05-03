@@ -47,7 +47,8 @@
     },
     "_is3DNode": true,
     "groupIndex": 0,
-    "_id": "026Df/z1dMBLrybb+v/U94"
+    "autoReleaseAssets": false,
+    "_id": "cb222558-d81a-43cd-8157-40811f916277"
   },
   {
     "__type__": "cc.Node",
@@ -164,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 277.9941546148048
+      "z": 264.1377481542538
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -348,7 +349,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -425.745,
+      "x": -430,
       "y": 217.938,
       "z": 0
     },
@@ -412,6 +413,7 @@
       "__id__": 7
     },
     "_enabled": true,
+    "_distance": 100,
     "brownRabit": {
       "__id__": 10
     },
@@ -490,7 +492,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -429.972,
+      "x": -330,
       "y": 50.884,
       "z": 0
     },
@@ -520,6 +522,7 @@
       "__id__": 11
     },
     "_enabled": true,
+    "_distance": 100,
     "grayRabit": {
       "__id__": 13
     },
@@ -598,7 +601,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -424.883,
+      "x": -130,
       "y": -106.857,
       "z": 0
     },
@@ -630,6 +633,8 @@
     "_enabled": true,
     "_checkJump": true,
     "_count": 0,
+    "_positionY": 0,
+    "_defaultLocationY": 0,
     "blackRabit": {
       "__id__": 16
     },
@@ -708,7 +713,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -432.516,
+      "x": -130,
       "y": -256.965,
       "z": 0
     },
@@ -738,6 +743,7 @@
       "__id__": 17
     },
     "_enabled": true,
+    "_distance": 100,
     "_flag": true,
     "_moveBack": false,
     "_positionX": 0,

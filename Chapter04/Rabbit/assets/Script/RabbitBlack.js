@@ -5,6 +5,7 @@ cc.Class({
     },
 
     properties: {
+        _distance:100,
         _flag: true,
         _moveBack: false,
         _positionX: 0,
@@ -19,6 +20,7 @@ cc.Class({
         cc.log("RabbitBlack: Hello");
         this._positionX = this.node.x;
         this.node.scale = this.node.scale * 1.5;
+        this.moveLimit = this.node.x + this._distance;
     },
 
     moveTo(dt) {
@@ -43,7 +45,7 @@ cc.Class({
                 return;
             }
         }
-        if (this.node.x > 100 && this._moveBack == false) {
+        if (this.node.x > this.moveLimit && this._moveBack == false) {
             this.node.scaleX = - 0.75;
             this.moveBack(dt);
             this._moveBack = true;

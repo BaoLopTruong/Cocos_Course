@@ -6,6 +6,7 @@ cc.Class({
     },
 
     properties: {
+        _distance:100,
         brownRabit:{
             default:null,
             type:cc.Component
@@ -13,11 +14,12 @@ cc.Class({
     },
     start () {
         cc.log("RabbitWhite: Hello");
+        this.moveLimit = this.node.x + this._distance;
     },
     
     update (dt=1) {
-        if(this.node.x <=100){
-            this.node.x += (dt*100);
+        if(this.node.x <= this.moveLimit){
+            this.node.x += (dt*20);
         }
         else{
             this.brownRabit.node.active = true;
