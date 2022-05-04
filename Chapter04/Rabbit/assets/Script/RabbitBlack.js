@@ -15,7 +15,7 @@ cc.Class({
     start() {
         cc.log("RabbitBlack: Hello");
         this._positionX = this.node.x;
-        this.node.scale = this.node.scale * 1.5;
+        this.node.scale = this.node.scale * 3;
         this.moveLimit = this.node.x + this._distance;
     },
 
@@ -36,7 +36,7 @@ cc.Class({
         if (this._moveBack) {
             this.moveBack(dt);
             if (this.node.x < this._positionX) {
-                this.node.scaleX = 0.75;
+                this.node.scaleX = 1.5;
             } else {
                 return;
             }
