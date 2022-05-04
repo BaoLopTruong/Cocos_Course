@@ -42,7 +42,7 @@ cc.Class({
             }
         }
         if (this.node.x > this.moveLimit && this._moveBack == false) {
-            this.node.scaleX = - 0.75;
+            this.node.scaleX = - this.node.scaleX;
             this.moveBack(dt);
             this._moveBack = true;
         } else {

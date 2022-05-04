@@ -1,7 +1,7 @@
 
 cc.Class({
     extends: cc.Component,
-    
+
     properties: {
         _distance:100,
         brownRabbit:{
@@ -16,7 +16,7 @@ cc.Class({
     
     update (dt=1) {
         if(this.node.x <= this.moveLimit){
-            this.node.x += (dt*20);
+            this.node.x += (dt*40);
         }
         else{
             this.brownRabbit.node.active = true;
