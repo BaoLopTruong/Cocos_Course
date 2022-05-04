@@ -1,8 +1,5 @@
 cc.Class({
     extends: cc.Component,
-    editor: {
-        executionOrder: 1
-    },
 
     properties: {
         _checkJump: 0,

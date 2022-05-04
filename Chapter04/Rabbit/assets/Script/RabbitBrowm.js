@@ -1,9 +1,6 @@
 cc.Class({
     extends: cc.Component,
-    editor: {
-        executionOrder: -1
-    },
-
+    
     properties: {
         _distance:100,
         grayRabbit: {
