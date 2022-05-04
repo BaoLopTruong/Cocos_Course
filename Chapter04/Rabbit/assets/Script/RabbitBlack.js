@@ -9,6 +9,7 @@ cc.Class({
         _flag: true,
         _moveBack: false,
         _positionX: 0,
+
     },
     onLoad: function () {
         this.node.active = false;
