@@ -7,7 +7,7 @@ cc.Class({
 
     properties: {
         _distance:100,
-        brownRabit:{
+        brownRabbit:{
             default:null,
             type:cc.Component
         }
@@ -22,7 +22,7 @@ cc.Class({
             this.node.x += (dt*20);
         }
         else{
-            this.brownRabit.node.active = true;
+            this.brownRabbit.node.active = true;
         }
     },
 });

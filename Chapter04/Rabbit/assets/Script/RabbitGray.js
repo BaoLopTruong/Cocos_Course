@@ -8,8 +8,7 @@ cc.Class({
         _checkJump: 0,
         _count: 0,
         _positionY: 0,
-        _defaultLocationY: 0,
-        blackRabit: {
+        blackRabbit: {
             default: null,
             type: cc.Component
         }
@@ -35,7 +34,6 @@ cc.Class({
 
     start() {
         cc.log("RabbitGray: Hmmm");
-        this._defaultLocationY = this.node.y;
         this.jump = 0;
         this.count = 0;
         this._positionY = this.node.y;
@@ -45,7 +43,7 @@ cc.Class({
         if (this._count < 3) {
             this.jumpUpAndDown();
         } else {
-            this.blackRabit.node.active = true;
+            this.blackRabbit.node.active = true;
         }
     },
 });

@@ -6,7 +6,7 @@ cc.Class({
 
     properties: {
         _distance:100,
-        grayRabit: {
+        grayRabbit: {
             default: null,
             type: cc.Component
         }
@@ -27,7 +27,7 @@ cc.Class({
             this.node.angle += (-dt * 500);
         } else {
             this.node.angle = 0;
-            this.grayRabit.node.active = true;
+            this.grayRabbit.node.active = true;
         }
     },
 });
