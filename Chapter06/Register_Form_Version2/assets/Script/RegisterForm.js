@@ -7,9 +7,6 @@ cc.Class({
         listView: cc.Layout,
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
     register(){
         this.registerForm.node.active = true;
         this.node.active = false;
@@ -21,5 +18,4 @@ cc.Class({
     start () {
     },
 
-    // update (dt) {},
 });

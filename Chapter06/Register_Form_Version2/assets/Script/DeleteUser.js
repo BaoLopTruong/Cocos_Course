@@ -1,6 +1,6 @@
 const Emitter = require('mEmitter');
-const eventCode =require('eventCode');
-let listUsers =[];
+const eventCode = require('eventCode');
+let listUsers = [];
 cc.Class({
     extends: cc.Component,
 
@@ -9,20 +9,16 @@ cc.Class({
         content: cc.Layout
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    onLoad () {
-        Emitter.instance = new Emitter();
-        Emitter.instance.registerEvent(eventCode.REGISTER, this.onListUser, this);
+    onLoad() {
+        
     },
-    onListUser(data){
+    onListUser(data) {
         listUsers = data;
     },
-
-
-    start () {
+    removeUSer() {
+        Emitter.instance.emit(eventCode.DELETE, this.onListUser);
+    },
+    start() {
 
     },
-
-    // update (dt) {},
 });
